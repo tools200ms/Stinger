@@ -1,9 +1,10 @@
 # Stinger
 
-This project has been created to figure-out MicroPython's development, debugging and testing tools and workflows.
+Universal platform for building and prototyping IoT devices. 
+
 
 To upload sources: 
 > cd src/
 > 
-> mpremote cp --recursive .
+> mpremote cp --recursive . :
 

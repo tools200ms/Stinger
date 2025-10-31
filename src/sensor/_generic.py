@@ -1,10 +1,13 @@
 
 from machine import Pin
-from dht import DHT11
+import dht as dht_sensor
 
-class TempHumi:
+from ._base import Sensor
+
+
+class DHT11 (Sensor):
     def __init__(self, pin_no):
-        dht = DHT11(Pin(pin_no))
+        dht = dht_sensor.DHT11(Pin(pin_no))
         self.dht = dht
 
     def read(self):

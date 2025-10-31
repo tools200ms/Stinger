@@ -1,6 +1,9 @@
 from machine import ADC, Pin
 
-class H2:
+from ._base import Sensor
+
+
+class H2 (Sensor):
     def __init__(self, pin_no: int):
         adc = ADC(Pin(pin_no))
         self.adc = adc
