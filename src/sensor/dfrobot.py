@@ -1,6 +1,6 @@
-from machine import ADC, Pin
-
 from ._base import Sensor
+
+from machine import ADC, Pin
 
 
 class H2 (Sensor):

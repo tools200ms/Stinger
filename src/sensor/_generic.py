@@ -1,7 +1,9 @@
 
-from machine import Pin
 import dht as dht_sensor
 from ._base import Sensor
+
+from machine import Pin
+
 
 class Button (Sensor):
     def __init__(self, pin_no):
