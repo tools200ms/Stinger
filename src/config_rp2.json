@@ -1,6 +1,7 @@
 {
+  "layout": "Demo",
+  "sensor.button": 5,
   "sensor.dfrobot.H2": 28,
-  "output.LED": 5,
   "display.waveshare.oled1_32": {
     "sck": 10, "mosi": 11, "rst": 12, "cs": 13, "dc": 14 }
 }

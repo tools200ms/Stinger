@@ -5,11 +5,10 @@ from ._base import Sensor
 
 class H2 (Sensor):
     def __init__(self, pin_no: int):
-        adc = ADC(Pin(pin_no))
-        self.adc = adc
+        self.__adc = ADC(Pin(pin_no))
     
     def readraw(self):
-        return self.adc.read_u16()
+        return self.__adc.read_u16()
 
     def read(self):
         voltage = self.readraw() * 3.3 / 65535
