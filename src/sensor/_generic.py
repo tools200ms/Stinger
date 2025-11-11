@@ -9,6 +9,9 @@ class Button (Sensor):
     def __init__(self, pin_no):
         self.__btn = Pin(pin_no, Pin.IN, Pin.PULL_UP)
 
+    def add_handler(self, handler):
+        self.__btn.irq(trigger=Pin.IRQ_FALLING, handler=handler)
+
     def read(self):
         self.__btn.value()
 
